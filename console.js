@@ -4,7 +4,8 @@
 
   //override console.log
   console.log = function(result){
-    $output.prepend('<code>'+$.globalEval(expression(result))+'</code>');
+    $.globalEval(expression(result))
+    $output.prepend('<code>'+eval(expression(result))+'</code>');
   }
 
   //proxy input to console.log
