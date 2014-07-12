@@ -16,4 +16,12 @@
     }
   })
 
+
+  //listen for errors and display them
+  window.onerror = function(error, url, line) {
+    console.log(error);
+  };
+
+
+
 })()
