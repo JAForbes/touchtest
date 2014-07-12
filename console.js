@@ -4,7 +4,11 @@
 
   //override console.log
   console.log = function(result){
-    $output.prepend('<code>'+eval(expression(result))+'</code>');
+    try {
+      $output.prepend('<code>'+eval(expression(result))+'</code>');
+    } catch (e) {
+      console.log(e.message);
+    }
   }
 
   //proxy input to console.log
