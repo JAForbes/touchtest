@@ -1,0 +1,16 @@
+#touch{
+  width:50%
+  float:left;
+  background-color: rgba(255,0,0,0.5);
+}
+#log{
+  width:50%
+  float:left;
+  background-color: rgba(0,255,0,0.5);
+}
+#log #output{
+  background-color: rgba(0,0,255,0.5);
+}
+#log input{
+  background-color: rgba(255,0,255,0.5);
+}
