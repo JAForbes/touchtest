@@ -9,7 +9,11 @@
 
   //proxy input to console.log
   $('textarea').keydown(function(e){
-    console.log(e.keyCode);
+    var enterCode = 13;
+    if(e.keyCode == enterCode){
+      console.log($(this).val())
+      $(this).empty()
+    }
   })
 
 })()
