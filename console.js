@@ -5,7 +5,7 @@
   //override console.log
   console.log = function(result){
     try {
-      $output.prepend('<code>'+eval.call(window,expression(result))+'</code>');
+      log(eval(expression(result));
     } catch (e) {
       log(e.message);
     }
@@ -22,8 +22,7 @@
       console.log($(this).val())
       $(this).val('')
     }
-  })
-
+  });
 
   //convert a js string into an expression
   function expression(str){
