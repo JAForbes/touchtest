@@ -16,6 +16,7 @@
   background-color: rgba(0,0,255,0.5);
 }
 #log code {
+  float:left;
   width:100%;
   background-color: rgba(100,200,100,0.5);
 }
