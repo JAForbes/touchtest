@@ -4,7 +4,6 @@
 
   //override console.log
   console.log = function(result){
-    $.globalEval(expression(result))
     $output.prepend('<code>'+eval(expression(result))+'</code>');
   }
 
