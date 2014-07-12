@@ -11,7 +11,7 @@
   $('textarea').keydown(function(e){
     var enterCode = 13;
     if(e.keyCode == enterCode){
-      console.log($(this).val())
+      console.log(eval($(this).val()))
       $(this).val('')
     }
   })
