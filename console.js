@@ -1,9 +1,10 @@
 (function(){
-  
+  $output = $('#output');
+  console.log = function(result){
+    $output.prepend('<code>'+result+'</code>');
+  }
+
 })()
 
-console.log = function(){
-  $('body').append('<h1>hi</h1>');
-}
-
-console.log('hi');
+console.log('first');
+console.log('second');
