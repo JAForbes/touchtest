@@ -1,7 +1,7 @@
 touchtest
 =========
 
-This is a test to see if I can develop a web app using only phones and mobile devices fir coding.
+This is a test to see if I can develop a web app using only phones and mobile devices for coding.
 
 Process
 -------
