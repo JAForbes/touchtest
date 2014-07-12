@@ -4,7 +4,7 @@
 
   //override console.log
   console.log = function(result){
-    $output.prepend('<code>'+eval(expression(result))+'</code>');
+    $output.prepend('<code>'+eval.call(window,expression(result))+'</code>');
   }
 
   //proxy input to console.log
