@@ -7,8 +7,12 @@
     try {
       $output.prepend('<code>'+eval(expression(result))+'</code>');
     } catch (e) {
-      console.log(e.message);
+      log(e.message);
     }
+  }
+
+  log = function(){
+    $output.prepend('<code>'+result+'</code>');
   }
 
   //proxy input to console.log
