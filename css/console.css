@@ -1,17 +1,22 @@
-#touch{
+#touch {
   width:50%;
   height:100%;
   float:left;
   background-color: rgba(255,0,0,0.5);
 }
-#log{
+#log {
   width:50%;
   height:100%;
   float:left;
   background-color: rgba(0,255,0,0.5);
 }
-#log #output{
+#log #output {
+  height:80%;
+  overflow-y:auto;
   background-color: rgba(0,0,255,0.5);
+}
+#log code {
+  background-color: rgba(100,200,100,0.5);
 }
 #log input{
   background-color: rgba(255,0,255,0.5);
