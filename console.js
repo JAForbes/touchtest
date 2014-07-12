@@ -12,7 +12,7 @@
     var enterCode = 13;
     if(e.keyCode == enterCode){
       console.log($(this).val())
-      $(this).empty()
+      $(this).val('')
     }
   })
 
