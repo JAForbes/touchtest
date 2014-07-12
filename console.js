@@ -11,7 +11,7 @@
     }
   }
 
-  log = function(){
+  log = function(result){
     $output.prepend('<code>'+result+'</code>');
   }
 
