@@ -5,7 +5,7 @@
   //override console.log
   console.log = function(result){
     try {
-      $output.prepend('<code>'+eval(expression(result))+'</code>');
+      $output.prepend('<code>'+eval.call(window,expression(result))+'</code>');
     } catch (e) {
       log(e.message);
     }
