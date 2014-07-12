@@ -5,7 +5,7 @@
   //override console.log
   console.log = function(result){
     try {
-      log(eval(expression(result));
+      log(eval(expression(result)));
     } catch (e) {
       log(e.message);
     }
