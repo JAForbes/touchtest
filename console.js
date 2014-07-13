@@ -4,11 +4,12 @@
 
   //override console.log
   console.log = function(result){
-    if(result+'' == '[object Object]'){
-      log("I'm an object")
-    }
     try {
-      log(eval(expression(result)));
+      var evaled = eval(expression(result));
+      if(evaled+'' == '[object Object]'){
+        log("I'm an object")
+      }
+      log();
     } catch (e) {
       log(result);
     }
