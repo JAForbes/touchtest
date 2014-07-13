@@ -15,9 +15,6 @@
     $output.prepend('<code>'+result+'</code>');
   }
 
-  //temp
-  console.log = log;
-
   //proxy input to console.log
   $('textarea').keydown(function(e){
     var enterCode = 13;
