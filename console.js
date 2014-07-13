@@ -16,7 +16,8 @@
   }
 
   log = function(result){
-    $output.prepend('<code>'+result+'</code>');
+    $output.append('<code>'+result+'</code>');
+    $output.scrollTop($output[0].scrollHeight);
   }
 
   //proxy input to console.log
