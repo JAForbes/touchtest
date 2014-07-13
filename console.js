@@ -7,14 +7,16 @@
     try {
       log(eval(expression(result)));
     } catch (e) {
-      log(e.message);
+      log('Catch:' + e.message);
     }
   }
 
   log = function(result){
     $output.prepend('<code>'+result+'</code>');
-    return result;
   }
+
+  //temp
+  console.log = log;
 
   //proxy input to console.log
   $('textarea').keydown(function(e){
