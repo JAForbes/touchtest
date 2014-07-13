@@ -4,7 +4,7 @@
 
   //override console.log
   console.log = function(result){
-    if(result+'' == '[Object object]'){
+    if(result+'' == '[object Object]'){
       log("I'm an object")
     }
     try {
