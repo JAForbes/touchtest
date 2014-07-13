@@ -9,7 +9,7 @@
       if(evaled+'' == '[object Object]'){
         log("I'm an object")
       }
-      log();
+      log(evaled);
     } catch (e) {
       log(result);
     }
