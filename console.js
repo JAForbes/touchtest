@@ -5,14 +5,15 @@
   //override console.log
   console.log = function(result){
     try {
-      log(eval(expression(result)));
+      return log(eval(expression(result)));
     } catch (e) {
-      log(e.message);
+      return log(e.message);
     }
   }
 
   log = function(result){
     $output.prepend('<code>'+result+'</code>');
+    return result;
   }
 
   //proxy input to console.log
