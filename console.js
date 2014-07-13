@@ -26,7 +26,12 @@
 
   //convert a js string into an expression
   function expression(str){
-    return '(' + str + ')'
+    if(str.slice(4) == 'func'){
+      return '(' + str + ')'
+    } else {
+      return str;
+    }
+    
   }
 
   //listen for errors and display them
