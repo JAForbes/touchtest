@@ -34,5 +34,6 @@
     console.log(error);
   };
 
+  //todo add handlers for Error, EvalError, RangeError, ReferenceError, SyntaxError, TypeError and URIError.
 
 })()
