@@ -7,7 +7,7 @@
     try {
       log(eval(expression(result)));
     } catch (e) {
-      log('Catch:' + e.message);
+      log(result);
     }
   }
 
