@@ -27,6 +27,7 @@
 
   //convert a js string into an expression
   function expression(str){
+    log(str);
     if(str && str.substring(0,4) == 'func'){
       return '(' + str + ')'
     } else {
