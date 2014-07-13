@@ -4,6 +4,9 @@
 
   //override console.log
   console.log = function(result){
+    if(result+'' == '[Object object]'){
+      log("I'm an object")
+    }
     try {
       log(eval(expression(result)));
     } catch (e) {
